@@ -18,16 +18,20 @@ namespace CalculadoraLogica.Servicios
         /// 101023 - MDN
         /// </summary>
         /// <returns></returns>
-        public bool igualdad()
+        public void igualdad()
         {
             string cadena1 = pedirCadena1();
             string cadena2 = pedirCadena2();
 
-            if( cadena1 ==cadena2)
+            if( cadena1 == cadena2)
             {
-                return false;
+                Console.WriteLine("El resultado de la igualdad es: true");
             }
-            return true;
+            else
+            {
+                Console.WriteLine("El resultado de la igualdad es: false");
+            }
+            
 
         }
 
@@ -36,9 +40,20 @@ namespace CalculadoraLogica.Servicios
         /// son iguales o son desiguales
         /// </summary>
         /// <returns></returns>
-        public bool desigualdad()
+        public void desigualdad()
         {
+            string cadena1 = pedirCadena1();
+            string cadena2 = pedirCadena2();
 
+            if ( cadena1 != cadena2) 
+            {
+                Console.WriteLine("El resultado de la desigualdad es: true");
+            }
+            else
+            {
+                Console.WriteLine("El resultado de la desigualdad es: false");
+            }
+            
         }
 
         /// <summary>

@@ -17,12 +17,12 @@ namespace CalculadoraLogica.Servicios
         /// 101023 - MDN
         /// </summary>
         /// <returns></returns>
-        public bool igualdad();
+        public void igualdad();
 
         /// <summary>
         /// Realiza la comprobación de la desigualdad de cadenas de texto introducidas
         /// </summary>
         /// <returns></returns>
-        public bool desigualdad();
+        public void desigualdad();
     }
 }

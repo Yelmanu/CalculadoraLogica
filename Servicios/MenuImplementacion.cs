@@ -17,7 +17,12 @@ namespace CalculadoraLogica.Servicios
             int opcionSeleccionada;
 
             Console.Write("Elija una opción: ");
-            Console.WriteLine("\");
+            Console.WriteLine("\n1.- Cerrar");
+            Console.WriteLine("2.- Igualdad");
+            Console.WriteLine("3.- Desigualdad");
+            opcionSeleccionada = Console.ReadKey(true).KeyChar - ('0');
+
+            return opcionSeleccionada;
         }
 
 
