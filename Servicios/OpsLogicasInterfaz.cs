@@ -19,5 +19,10 @@ namespace CalculadoraLogica.Servicios
         /// <returns></returns>
         public bool igualdad();
 
+        /// <summary>
+        /// Realiza la comprobación de la desigualdad de cadenas de texto introducidas
+        /// </summary>
+        /// <returns></returns>
+        public bool desigualdad();
     }
 }
