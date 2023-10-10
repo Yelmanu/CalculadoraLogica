@@ -21,7 +21,7 @@ namespace CalculadoraLogica.Servicios
         public void igualdad()
         {
             string cadena1 = pedirCadena1();
-            string cadena2 = pedirCadena2();
+            string cadena2 = pedirCadena1();
 
             if( cadena1 == cadena2)
             {
@@ -43,7 +43,7 @@ namespace CalculadoraLogica.Servicios
         public void desigualdad()
         {
             string cadena1 = pedirCadena1();
-            string cadena2 = pedirCadena2();
+            string cadena2 = pedirCadena1();
 
             if ( cadena1 != cadena2) 
             {
@@ -70,16 +70,6 @@ namespace CalculadoraLogica.Servicios
 
             return cadena1;
 
-        }
-
-        private string pedirCadena2()
-        {
-            string cadena2;
-
-            Console.WriteLine("Introduce la primera expresión: ");
-            cadena2 = Console.ReadLine();
-
-            return cadena2;
         }
     }
 }
